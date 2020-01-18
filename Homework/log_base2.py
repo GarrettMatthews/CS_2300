@@ -40,11 +40,11 @@ def main():
     number_lyst = [1, 2, 4, 8, 16, 32, 64, 128, 512]
     attach_lyst = [" ", "K", "M", "G", "T"]
     correct = 0
-    print("As a reminder, all log problems presented are assumed to be log base 2")
+    print("As a reminder, all log problems presented are assumed to be log base 2", '\n')
     while correct < 5:
         problem, answer = problem_generation(number_lyst,attach_lyst)
         answer = round_answer(answer)
-        prompt = ("{}{}{}".format("What is the log of ",problem," to the nearest integer?"))
+        prompt = ("{}{}{}".format("What is the log of ",problem," to the nearest integer? "))
         while True:
             try:
                 response = int(input(prompt))
